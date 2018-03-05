@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     root to: "pages#index"
     resources :mobiles
     resources :makers
+    resources :orders, only: [:index]
+    resources :order_details, only: [:create, :update, :destroy]
   end
 end

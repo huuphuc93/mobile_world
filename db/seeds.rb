@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Maker.create(name: "Apple Co");
-Mobile.create(name: "iPhone 8 Plus 256GB", price: 250, color: "pink", width: "78.1 mm", height: "158.4 mm", font_camera: "12 MP" , behind_camera: "12 MP", weight: 202, battery: "2691 mAh", resolution: "1080 x 1920 pixels", maker_id: 1);
+8.times do
+    Mobile.create(name: "iPhone 8 Plus 256GB", price: 250, color: "pink", width: 78, height: 158, font_camera: 12 , behind_camera: 12, weight: 202, battery: 2691, resolution_width: 1080, resolution_height: 1920, maker_id: 1, cover_image: "p-1.jpg");
+end

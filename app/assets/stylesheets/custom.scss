@@ -2,20 +2,14 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$white: #fff;
-$header-yellow: #fed700;
-.fix-padding-header-brand {
-  padding-left: 10px;
+ul.unit li {
+  width: 20% !important;
 }
 
-.navbar-inverse .navbar-brand {
-    color: $white;
+ul.cart-header li, ul.cart-header1 li, ul.cart-header2 li {
+  width: 20% !important;  
 }
 
-.navbar-default {
-  background-color: $header-yellow;
-}
-
-.navbar-nav li:hover {
-  background-color: $white;
-}
+// .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+//   width: 140px !important;
+// }

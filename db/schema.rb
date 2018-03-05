@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20180228121852) do
 
   create_table "mobiles", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
+    t.decimal "price", precision: 8, scale: 2
     t.string "color"
     t.integer "width"
     t.integer "height"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20180228121852) do
     t.integer "resolution_width"
     t.integer "resolution_height"
     t.string "description"
+    t.string "cover_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "maker_id"
@@ -69,8 +70,9 @@ ActiveRecord::Schema.define(version: 20180228121852) do
   end
 
   create_table "order_details", force: :cascade do |t|
-    t.integer "quantity"
-    t.integer "price"
+    t.integer "quantity", default: 1
+    t.decimal "price", precision: 8, scale: 2
+    t.decimal "total_price", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "order_id"
