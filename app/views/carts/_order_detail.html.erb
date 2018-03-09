@@ -1,0 +1,12 @@
+<ul class="cart-header order-mobile-<%= order_detail.id %>">
+  <div class="close1" onclick="remove_item(this)" id=<%= order_detail.id %>> </div>
+    <li class="ring-in">
+      <a href="single.html" >
+        <%= image_tag order_detail.mobile.cover_image, class: "img-responsive" %>
+      </a>
+    </li>
+    <li><span class="name"><%= order_detail.mobile.name %></span></li>
+    <li><span class="cost"><input class="order-quantity-<%= order_detail.id %> quantity" id=<%= order_detail.id %> type="number" min="1" style="width: 150px" value=<%= order_detail.quantity %>></span></li>
+    <li><span class="cost order-mobile-price-<%= order_detail.id %> price"><%= order_detail.price %>&nbsp$</span></li>
+  <div class="clearfix"> </div>
+</ul>

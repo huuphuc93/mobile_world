@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20180228124325) do
     t.index ["rater_id"], name: "index_average_caches_on_rater_id"
   end
 
+  create_table "carts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "comments", force: :cascade do |t|
     t.integer "value", default: 0
     t.integer "parent_id"
@@ -62,6 +67,7 @@ ActiveRecord::Schema.define(version: 20180228124325) do
     t.integer "resolution_width"
     t.integer "resolution_height"
     t.string "description"
+    t.string "cover_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "maker_id"
@@ -75,6 +81,8 @@ ActiveRecord::Schema.define(version: 20180228124325) do
     t.datetime "updated_at", null: false
     t.integer "order_id"
     t.integer "mobile_id"
+    t.integer "cart_id"
+    t.index ["cart_id"], name: "index_order_details_on_cart_id"
     t.index ["mobile_id"], name: "index_order_details_on_mobile_id"
     t.index ["order_id"], name: "index_order_details_on_order_id"
   end

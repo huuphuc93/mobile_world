@@ -3,8 +3,10 @@
     <div class="header">
       <div class="col-md-9 header-left">
         <div class="top-nav">
-          <%= link_to image_tag("logo.jpg"), root_path %>
-          <div class="col-md-8 col-md-offset-2">
+          <div class= "col-md-2 fix-image_size">
+            <%= link_to image_tag("Untitled-6.png"), root_path %>
+          </div>
+          <div class="col-md-10 fix-size-nav-bar">
             <ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
               <li class="grid"><a href="#">Men</a>
                 <div class="mepanel">
@@ -61,7 +63,7 @@
         </div>
         <div class="clearfix"> </div>
     </div>
-    <div class="col-md-3 header-right">
+    <div class="col-md-3 header-right fix-size-nav-bar">
       <div class="search-bar">
         <input type="text" value= "Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
         <input type="submit" value="">

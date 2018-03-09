@@ -21,3 +21,4 @@
 //= require imagezoom
 //= require layout
 //= require jquery.flexslider
+//= require cart

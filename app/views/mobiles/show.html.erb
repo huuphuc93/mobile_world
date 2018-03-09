@@ -82,7 +82,13 @@
               <li><span>SKU</span>
               <span class="women1">: CK09</span></li>
             </ul>
-              <a href="#" class="add-cart item_add">ADD TO CART</a>
+              <%= form_for @order_detail do |f| %>
+                <%= f.number_field :quantity, value: 1 %>
+                <%= f.hidden_field :mobile_id, value: @mobile.id %>
+                <%= f.hidden_field :price, value: @mobile.price %>
+                <%= f.submit "ADD TO CART", class: "btn btn-primary" %>
+              <% end %>
+              <!--<a href="#" class="add-cart item_add">ADD TO CART</a>-->
           </div>
         </div>
         <div class="clearfix"> </div>

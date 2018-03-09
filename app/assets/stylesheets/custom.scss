@@ -2,31 +2,21 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$white: #fff;
-$header-yellow: #fed700;
+ul.unit li {
+  width: 20% !important;
+}
 
-body {
-  textarea {
-    resize: none;
+ul.cart-header li, ul.cart-header1 li, ul.cart-header2 li {
+  width: 20% !important;  
+}
+
+.fix-image_size {
+  padding-left: 0px !important;
+  img {
+    width: 150px !important;
   }
 }
-
-.fix-padding-header-brand {
-  padding-left: 10px;
-}
-
-.navbar-inverse .navbar-brand {
-    color: $white;
-}
-
-.navbar-default {
-  background-color: $header-yellow;
-}
-
-.navbar-nav li:hover {
-  background-color: $white;
-}
-
-.layout {
-  margin-top: 5%;
+.fix-size-nav-bar {
+  top: 20px !important;
+  padding-left: 30px !important;
 }

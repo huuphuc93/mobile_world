@@ -1,0 +1,21 @@
+<div id="show-mobile-<%= mobile.id %>">
+  <div class="col-md-3 product-left">
+    <div class="product-main simpleCart_shelfItem">
+      <%= link_to mobile_path(mobile), class: "mark" do %>
+        <%= image_tag mobile.cover_image, class: "img-responsive zoom-img" %>
+      <% end %>
+      <div class="product-bottom">
+        <h3 class= "mobile-name-<%= mobile.id %>"><%= mobile.name %></h3>
+        <p>Explore Now</p>
+        <h4><a class="item_add" id="<%= mobile.id %>" onclick= "add_to_cart(this)"><i></i></a>
+          <span class=" item_price">
+            $&nbsp<span class= "mobile-price-<%= mobile.id %>"><%= mobile.price %></span>
+          </span>
+        </h4>
+      </div>
+      <div class="srch">
+        <span class= "mobile-discount-<%= mobile.id %>">-50%</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!--start-breadcrumbs-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Checkout</li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!--end-breadcrumbs-->
+<!--start-ckeckout-->
+<div class="ckeckout">
+  <div class="container">
+    <div class="ckeck-top heading">
+      <h2>CHECKOUT</h2>
+    </div>
+    <div class="ckeckout-top">
+    <div class="cart-items">
+      <h3>My Shopping Bag (3)</h3>
+      <div class="in-check" >
+        <ul class="unit">
+          <li><span>Item</span></li>
+          <li><span>Product Name</span></li>
+          <li><span>Quantity</span></li>
+          <li><span>Unit Price</span></li>
+          <li><span>Delivery Details</span></li>
+          <div class="clearfix"> </div>
+        </ul>
+        <%= render partial: "mobile", collection: @mobiles %>
+        <ul class="cart-header">
+            <li class="ring-in"></li>
+            <li><span class="name">Total Money</span></li>
+            <li><span class="cost"></span></li>
+            <li><span></span></li>
+            <li><span class="cost total_price"></span></li>
+          <div class="clearfix"> </div>
+        </ul>
+        <h3>Address</h3>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+<!--end-ckeckout-->

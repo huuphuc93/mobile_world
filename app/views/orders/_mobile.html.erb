@@ -1,0 +1,14 @@
+<ul class="cart-header order-mobile-<%= mobile.id %>">
+  <div class="close1" onclick="remove_item(this)" id=<%= mobile.id %>> </div>
+    <li class="ring-in">
+      <a href="single.html" >
+        <%= image_tag mobile.cover_image, class: "img-responsive" %>
+      </a>
+    </li>
+    <li><span class="name"><%= mobile.name %></span></li>
+    <li><span class="cost"><input class="order-quantity-<%= mobile.id %>" type="number" min="1" style="width: 150px" value="1"></span></li>
+    <li><span class="cost order-mobile-price-<%= mobile.id %>"><%= mobile.price %>&nbsp$</span></li>
+    <li><span>Free</span>
+    <p>Delivered in 2-3 business days</p></li>
+  <div class="clearfix"> </div>
+</ul>
