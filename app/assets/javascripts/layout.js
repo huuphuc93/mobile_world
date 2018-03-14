@@ -38,4 +38,26 @@ $(window).load(function() {
     animation: "slide",
     controlNav: "thumbnails"
   });
+  
+  $('.locale').on('change', function() {
+    var selected = $('.selected')[0].outerText;
+    if(selected == "ENGLISH" || selected == "TIẾNG ANH") {
+      document.cookie = "locale=en; expires=; path=/";
+      location.reload();
+    } else {
+      document.cookie = "locale=vi; expires=; path=/";
+      location.reload();
+    }
+  })
+  
+  $('.language_user').on('change', function() {
+    var selected = $('.selected')[0].outerText;
+    if(selected == "ENGLISH" || selected == "TIẾNG ANH") {
+      document.cookie = "language=en; expires=; path=/";
+      location.reload();
+    } else {
+      document.cookie = "language=vi; expires=; path=/";
+      location.reload();
+    }
+  })
 });

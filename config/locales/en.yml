@@ -1,9 +1,8 @@
 en:
   layouts:
     header:
-      language: "Language"
-      english: "English"
-      vietnamese: "Vietnamese"
+      en: "English"
+      vi: "Vietnamese"
       card: "Empty Cart"
       mobile_world: "Mobile World"
       search: "Search"
